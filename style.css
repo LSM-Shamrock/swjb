@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 
-
+    /* border: 1px solid black; */
+}
+html{
+    scroll-behavior: smooth;
 }
 
 a {
@@ -123,6 +126,27 @@ li {
 }
 
 
+.mouse{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 100px;
+    animation: mouse 1s infinite;
+}
+@keyframes mouse{
+    0%{
+        transform: translateY(0px);
+
+    }
+    50%{
+        transform: translateY(20px);
+
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+
 .about{
     width: 1200px;
     height: 800px;
@@ -182,4 +206,71 @@ li {
     font-size: 50px;
     color: #d9d;
     margin-right: 10px;
+}
+
+
+.skills{
+    background-color: #eee;
+    width: 100%;
+    height: 700px;
+}
+.skills h2{
+    font-size: 40px;
+    color: #693;
+}
+.skills h1{
+    font-size: 50px;
+}
+.skills-inner{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+.skills .contents{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 50px;
+
+}
+.skills .contents li{
+
+    width: 200px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+
+    padding: 20px;
+
+    transition: 0.1s;
+
+}
+.skills h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+.skills i{
+    
+}
+.skills .contents li:hover{
+    background-color: #693;
+    color: white;
+    border-radius: 15px;
+}
+.skills .contents li:hover i{
+    color: white;
+}
+
+.bg{
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg.jpg);
+    background-size: cover;
+
+    background-attachment: fixed;
 }
