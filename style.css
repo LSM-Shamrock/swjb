@@ -64,7 +64,7 @@ header a:hover {
 .skills {
     background-color: #eee;
 
-    padding: 50px;
+    padding: 50px 0;
 
     display: flex;
     flex-direction: column;
@@ -107,6 +107,7 @@ header a:hover {
 .projects {
     background-color: #eee;
 
+    margin: 0;
     padding: 50px;
 
     display: flex;
@@ -125,33 +126,26 @@ header a:hover {
 .projects ul li {
     background: #fff;
     box-shadow: 0 5px 5px gray;
-
-    margin: 20px;
-    padding: 10px;
-
     border-radius: 50px;
+
+    width: 400px;
+    height: 600px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+
+    margin: 15px 10px;
+    padding: 50px 0;
 }
 .projects ul li .imageBox {
+    overflow: hidden;
+    border-radius: 50px;
     width: 250px;
     height: 250px;
-
-    margin: 10px;
-    padding: 0;
-
-    border-radius: 50px;
-
-    overflow: hidden;
 }
-.projects ul li .textBox {
-    width: 350px;
-    height: 200px;
-
-    margin: 10px;
+.projects ul li h1 {
+    margin: 25px;
     padding: 0;
 }
 
