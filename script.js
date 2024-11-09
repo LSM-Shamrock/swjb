@@ -7,7 +7,8 @@ document.querySelectorAll('a').forEach(anchor => {
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - 50;
+            const header = document.getElementById("header");
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight;
             window.scrollTo({
                 top: targetPosition
             });
@@ -16,7 +17,7 @@ document.querySelectorAll('a').forEach(anchor => {
 });
 
 window.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
+    const header = document.getElementById("header");
 
     if (window.scrollY > 0) {
         header.classList.add("scrolled");
